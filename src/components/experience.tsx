@@ -23,7 +23,7 @@ const experienceData = [
 
 export function Experience() {
   return (
-    <section id="experience" className="w-full py-12 md:py-24 lg:py-32 bg-secondary/30">
+    <section id="experience" className="w-full py-12 md:py-24 lg:py-32 animated-gradient">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
@@ -36,7 +36,7 @@ export function Experience() {
         
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {experienceData.map((item, index) => (
-            <Card key={index} className="h-full">
+            <Card key={index} className="h-full bg-card/80 backdrop-blur-sm">
               <CardHeader>
                 <div className="flex items-start justify-between gap-4">
                   <div>

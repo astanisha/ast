@@ -38,7 +38,7 @@ const portfolioData = [
 
 export function Portfolio() {
   return (
-    <section id="portfolio" className="w-full py-12 md:py-24 lg:py-32">
+    <section id="portfolio" className="w-full py-12 md:py-24 lg:py-32 animated-gradient">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
@@ -53,7 +53,7 @@ export function Portfolio() {
             const imageData = PlaceHolderImages.find(p => p.id === item.id);
             return (
               <Link href={`/portfolio/${item.slug}`} key={item.id} className="group block">
-                <Card className="overflow-hidden h-full flex flex-col transition-all group-hover:shadow-xl group-hover:-translate-y-1">
+                <Card className="overflow-hidden h-full flex flex-col transition-all group-hover:shadow-xl group-hover:-translate-y-1 bg-card/80 backdrop-blur-sm">
                   <div className="relative w-full aspect-video">
                     <Image
                       src={imageData?.imageUrl || 'https://picsum.photos/600/400'}

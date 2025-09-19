@@ -33,7 +33,7 @@ const skillsData = {
 
 export function Skills() {
   return (
-    <section id="skills" className="w-full py-12 md:py-24 lg:py-32 bg-secondary/30">
+    <section id="skills" className="w-full py-12 md:py-24 lg:py-32 animated-gradient">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
@@ -44,7 +44,7 @@ export function Skills() {
           </div>
         </div>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <Card className="h-full">
+          <Card className="h-full bg-card/80 backdrop-blur-sm">
             <CardHeader className="flex flex-row items-center gap-4">
               <Languages className="w-8 h-8 text-accent" />
               <CardTitle className="font-headline">Languages</CardTitle>
@@ -55,7 +55,7 @@ export function Skills() {
               ))}
             </CardContent>
           </Card>
-          <Card className="h-full">
+          <Card className="h-full bg-card/80 backdrop-blur-sm">
             <CardHeader className="flex flex-row items-center gap-4">
               <Terminal className="w-8 h-8 text-accent" />
               <CardTitle className="font-headline">Technical Skills</CardTitle>
@@ -66,7 +66,7 @@ export function Skills() {
               ))}
             </CardContent>
           </Card>
-          <Card className="h-full">
+          <Card className="h-full bg-card/80 backdrop-blur-sm">
             <CardHeader className="flex flex-row items-center gap-4">
               <Brush className="w-8 h-8 text-accent" />
               <CardTitle className="font-headline">Creative Skills</CardTitle>
