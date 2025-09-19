@@ -40,10 +40,10 @@ export function Footer() {
     p => p.id === 'anika-profile'
   );
   return (
-    <footer id="contact" className="bg-secondary/20 border-t">
+    <footer id="contact" className="bg-background border-t">
       <div className="container py-12 px-4 md:px-6">
-        <div className="max-w-md mx-auto bg-card p-4 sm:p-6 rounded-lg shadow-lg border">
-          <div className="flex items-center gap-4">
+        <div className="max-w-4xl mx-auto bg-card p-6 sm:p-8 rounded-lg shadow-lg border">
+          <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-8">
             <div className="flex-shrink-0">
               <Image
                 src={
@@ -51,35 +51,35 @@ export function Footer() {
                   'https://picsum.photos/seed/anika-profile/96/96'
                 }
                 alt="Anika Saima Tanisha"
-                width={70}
-                height={70}
-                className="rounded-full"
+                width={96}
+                height={96}
+                className="rounded-full border-4 border-secondary"
                 data-ai-hint={anikaProfilePic?.imageHint || 'woman smiling'}
               />
             </div>
-            <div className="border-l border-primary/50 pl-4 flex-grow">
+            <div className="flex-grow text-center sm:text-left border-t sm:border-t-0 sm:border-l border-border pt-6 sm:pt-0 sm:pl-8 w-full">
               <p
                 style={{
                   fontFamily:
                     "'Brush Script MT', 'Brush Script Std', 'Lucida Calligraphy', 'Lucida Handwriting', cursive",
                 }}
-                className="text-2xl text-violet-800 leading-tight">
+                className="text-3xl text-primary leading-tight">
                 Anika Saima Tanisha
               </p>
-              <p className="mt-1 text-sm text-muted-foreground">
+              <p className="mt-1 text-base text-muted-foreground">
                 B.A. Journalism & Mass Communication
               </p>
-              <p className="text-xs text-muted-foreground">
+              <p className="text-sm text-muted-foreground">
                 University of Dhaka | Class of 2026
               </p>
               <p className="mt-2">
                 <a
                   href="mailto:astanisha@duck.com"
-                  className="text-sm text-green-800 hover:underline">
+                  className="text-base text-accent hover:underline">
                   astanisha@duck.com
                 </a>
               </p>
-              <div className="mt-2 flex items-center gap-2">
+              <div className="mt-4 flex justify-center sm:justify-start gap-3">
                 {socialLinks.map(link => (
                   <a
                     href={link.href}
@@ -89,8 +89,8 @@ export function Footer() {
                     className="transition-transform hover:scale-110">
                     <img
                       src={link.src}
-                      width="20"
-                      height="20"
+                      width="24"
+                      height="24"
                       alt={link.alt}
                       className={
                         link.alt === 'GitHub' ||
