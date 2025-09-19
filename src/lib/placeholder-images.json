@@ -29,6 +29,12 @@
       "description": "Image for Dhaka expressions photo essay",
       "imageUrl": "https://picsum.photos/seed/dhaka-people/600/400",
       "imageHint": "portrait people"
+    },
+    {
+      "id": "anika-profile",
+      "description": "Anika Saima Tanisha's profile picture",
+      "imageUrl": "https://lh3.googleusercontent.com/pw/AP1GczP7NIawPQ5fzu_mzD5CVGZP5o4lCb3cronA4xJUi2w_5oPK7TOVP8j7GVE1IJMeXx1eKIh6ToG7Z85Rk7s3xFnUVpY1i31AmqH71TUVeQiWXW-81WI8JI4Msz0sL-Gc9nbS0bQEv1PHcx_bTB0GiG9S-g=w96-h96-s-no-gm",
+      "imageHint": "woman smiling"
     }
   ]
 }
