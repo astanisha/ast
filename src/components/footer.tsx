@@ -39,73 +39,83 @@ export function Footer() {
     p => p.id === 'anika-profile'
   );
   return (
-    <footer id="contact" className="w-full border-t animated-gradient">
-      <div className="container py-12 px-4 md:px-6">
-        <div className="max-w-md mx-auto bg-card/80 backdrop-blur-sm p-4 sm:p-6 rounded-lg shadow-lg border">
-          <div className="flex items-center gap-4">
-            <div className="flex-shrink-0">
-              <Image
-                src={
-                  anikaProfilePic?.imageUrl ||
-                  'https://picsum.photos/seed/anika-profile/96/96'
-                }
-                alt="Anika Saima Tanisha"
-                width={70}
-                height={70}
-                className="rounded-full"
-                data-ai-hint={anikaProfilePic?.imageHint || 'woman smiling'}
-              />
+    <footer id="contact" className="w-full border-t relative overflow-hidden">
+        <Image
+          src="https://picsum.photos/seed/contact-bg/1920/1080"
+          alt="Abstract background for contact section"
+          fill
+          className="object-cover"
+          data-ai-hint="desk stationery"
+        />
+        <div className="absolute inset-0 animated-gradient bg-background/80 backdrop-blur-sm" />
+        <div className="container relative z-10 py-12 px-4 md:px-6">
+        <div className="bg-card/80 backdrop-blur-sm p-4 sm:p-8 rounded-lg shadow-2xl border max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="flex flex-col items-center md:items-start text-center md:text-left">
+                <Image
+                    src={
+                    anikaProfilePic?.imageUrl ||
+                    'https://picsum.photos/seed/anika-profile/96/96'
+                    }
+                    alt="Anika Saima Tanisha"
+                    width={96}
+                    height={96}
+                    className="rounded-full mb-4 shadow-lg"
+                    data-ai-hint={anikaProfilePic?.imageHint || 'woman smiling'}
+                />
+                <h3
+                    style={{
+                    fontFamily:
+                        "'Brush Script MT', 'Brush Script Std', 'Lucida Calligraphy', 'Lucida Handwriting', cursive",
+                    }}
+                    className="text-4xl text-primary leading-tight drop-shadow-md">
+                    Anika Saima Tanisha
+                </h3>
+                <p className="mt-2 text-lg text-muted-foreground">
+                    B.A. Journalism & Mass Communication
+                </p>
+                <p className="text-md text-muted-foreground">
+                    University of Dhaka | Class of 2026
+                </p>
             </div>
-            <div className="border-l border-primary/50 pl-4 flex-grow">
-              <p
-                style={{
-                  fontFamily:
-                    "'Brush Script MT', 'Brush Script Std', 'Lucida Calligraphy', 'Lucida Handwriting', cursive",
-                }}
-                className="text-2xl text-violet-800 leading-tight">
-                Anika Saima Tanisha
-              </p>
-              <p className="mt-1 text-sm text-muted-foreground">
-                B.A. Journalism & Mass Communication
-              </p>
-              <p className="text-xs text-muted-foreground">
-                University of Dhaka | Class of 2026
-              </p>
-              <p className="mt-2">
-                <a
+
+            <div className="flex flex-col items-center md:items-start">
+                 <h4 className="text-2xl font-headline mb-4 text-center md:text-left">Get In Touch</h4>
+                 <a
                   href="mailto:astanisha@duck.com"
-                  className="text-sm text-green-800 hover:underline">
+                  className="text-lg text-green-800 font-bold hover:underline mb-6">
                   astanisha@duck.com
                 </a>
-              </p>
-              <div className="mt-2 flex items-center gap-2">
-                {socialLinks.map(link => (
-                  <a
-                    href={link.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    key={link.href}
-                    className="transition-transform hover:scale-110">
-                    <img
-                      src={link.src}
-                      width="20"
-                      height="20"
-                      alt={link.alt}
-                      className={
-                        link.alt === 'GitHub' ||
-                        link.alt === 'Blog/Portfolio' ||
-                        link.alt === 'Location'
-                          ? 'dark:invert'
-                          : ''
-                      }
-                    />
-                  </a>
-                ))}
-              </div>
+                
+                <div className="flex items-center gap-4">
+                    {socialLinks.map(link => (
+                    <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        key={link.href}
+                        className="transition-transform hover:scale-110 p-2 bg-background/50 rounded-full shadow-md">
+                        <img
+                        src={link.src}
+                        width="24"
+                        height="24"
+                        alt={link.alt}
+                        className={
+                            link.alt === 'GitHub' ||
+                            link.alt === 'Blog/Portfolio' ||
+                            link.alt === 'Location'
+                            ? 'dark:invert'
+                            : ''
+                        }
+                        />
+                    </a>
+                    ))}
+                </div>
             </div>
+
           </div>
         </div>
-        <div className="text-center mt-8 text-sm text-muted-foreground">
+        <div className="text-center mt-12 text-sm text-background/80">
           <p>
             &copy; {new Date().getFullYear()} Anika Saima Tanisha. All Rights
             Reserved.

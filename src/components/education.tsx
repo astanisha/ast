@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { GraduationCap } from "lucide-react";
+import Image from "next/image";
 
 const educationData = [
   {
@@ -24,8 +25,16 @@ const educationData = [
 
 export function Education() {
   return (
-    <section id="education" className="w-full py-12 md:py-24 lg:py-32 animated-gradient">
-      <div className="container px-4 md:px-6">
+    <section id="education" className="w-full py-12 md:py-24 lg:py-32 relative overflow-hidden">
+      <Image
+        src="https://picsum.photos/seed/education-bg/1920/1080"
+        alt="Abstract background for education section"
+        fill
+        className="object-cover"
+        data-ai-hint="university campus"
+      />
+      <div className="absolute inset-0 animated-gradient bg-background/80 backdrop-blur-sm" />
+      <div className="container px-4 md:px-6 relative z-10">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
             <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-5xl">Education</h2>

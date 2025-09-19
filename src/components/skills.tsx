@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Languages, Brush, Terminal } from "lucide-react";
+import Image from "next/image";
 
 const skillsData = {
   languages: [
@@ -33,8 +34,16 @@ const skillsData = {
 
 export function Skills() {
   return (
-    <section id="skills" className="w-full py-12 md:py-24 lg:py-32 animated-gradient">
-      <div className="container px-4 md:px-6">
+    <section id="skills" className="w-full py-12 md:py-24 lg:py-32 relative overflow-hidden">
+      <Image
+        src="https://picsum.photos/seed/skills-bg/1920/1080"
+        alt="Abstract background for skills section"
+        fill
+        className="object-cover"
+        data-ai-hint="creative tools"
+      />
+      <div className="absolute inset-0 animated-gradient bg-background/80 backdrop-blur-sm" />
+      <div className="container px-4 md:px-6 relative z-10">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">
             <h2 className="text-3xl font-headline font-bold tracking-tighter sm:text-5xl">Skills</h2>
