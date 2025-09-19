@@ -1,3 +1,4 @@
+
 export interface PortfolioArticle {
     title: string;
     description: string;
@@ -24,7 +25,7 @@ export const portfolioArticles: Record<string, PortfolioArticle> = {
             { type: 'heading', level: 2, content: "The Mountains We Build" },
             { type: 'paragraph', content: "Every day, Dhaka, a city teeming with over 20 million souls, generates nearly 7,000 tons of solid waste. The sheer volume is staggering, creating artificial hills on the city's outskirts—monuments to our consumption. For my final year project, I spent three months tracing the journey of this waste, from the household bin to its final, often problematic, resting place." },
             { type: 'image', content: 'https://picsum.photos/seed/waste-pile/800/500', alt: 'A large pile of garbage at a landfill', imageHint: 'landfill waste' },
-            { type 'heading', level: 3, content: "A System Under Strain" },
+            { type: 'heading', level: 3, content: "A System Under Strain" },
             { type: 'paragraph', content: "My investigation revealed a system stretched to its breaking point. Waste collection is inconsistent, with many neighborhoods relying on informal collectors known as 'tokais'. While these individuals are crucial to recycling, they work in hazardous conditions for minimal pay. I spoke with several collectors who shared stories of health problems and social stigma." },
             { type: 'paragraph', content: "The city corporations are aware of the problem, but a lack of funding, infrastructure, and public awareness campaigns hampers their efforts. Landfills are overflowing, and poorly managed dumping sites are contaminating soil and water sources, posing a significant public health risk." },
             { type: 'heading', level: 3, content: "Glimmers of Hope: Community-Led Initiatives" },
@@ -85,3 +86,5 @@ export const portfolioArticles: Record<string, PortfolioArticle> = {
         ],
     },
 };
+
+    

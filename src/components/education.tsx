@@ -1,6 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { GraduationCap } from "lucide-react";
-import { cn } from "@/lib/utils";
 
 const educationData = [
   {
@@ -35,27 +34,22 @@ export function Education() {
             </p>
           </div>
         </div>
-        <div className="relative max-w-5xl mx-auto">
-          <div className="absolute left-0 md:left-1/2 w-0.5 h-full bg-border md:-translate-x-1/2" />
+        <div className="relative max-w-3xl mx-auto">
+          <div className="absolute left-4 w-0.5 h-full bg-border" />
           {educationData.map((item, index) => (
-            <div key={index} className="relative pl-8 md:pl-0 mb-12">
-              <div className="md:flex items-center md:even:flex-row-reverse">
-                <div className={cn("md:w-1/2", index % 2 === 0 ? "md:pr-8" : "md:pl-8")}>
-                  <Card>
-                    <CardHeader>
-                      <CardTitle className="font-headline">{item.institution}</CardTitle>
-                      <CardDescription>{item.degree} | {item.years}</CardDescription>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-sm text-muted-foreground">{item.details}</p>
-                    </CardContent>
-                  </Card>
-                </div>
-                <div className="hidden md:block md:w-1/2"></div>
-              </div>
-              <div className="absolute top-1 -left-4 md:left-1/2 md:-translate-x-1/2 w-8 h-8 rounded-full bg-background border-2 border-primary flex items-center justify-center z-10">
+            <div key={index} className="relative pl-12 mb-12">
+              <div className="absolute -left-0 top-1 w-8 h-8 rounded-full bg-background border-2 border-primary flex items-center justify-center z-10">
                 <GraduationCap className="w-4 h-4 text-primary" />
               </div>
+              <Card>
+                <CardHeader>
+                  <CardTitle className="font-headline">{item.institution}</CardTitle>
+                  <CardDescription>{item.degree} | {item.years}</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground">{item.details}</p>
+                </CardContent>
+              </Card>
             </div>
           ))}
         </div>
