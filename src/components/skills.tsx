@@ -3,7 +3,17 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Languages, Brush, Terminal } from "lucide-react";
 
 const skillsData = {
-  languages: ["Bengali (Native)", "English (Fluent)"],
+  languages: [
+    "Bengali (Native)",
+    "English (Fluent)",
+    "Spanish",
+    "French",
+    "Arabic",
+    "Hindi",
+    "Malayalam",
+    "Indonesian",
+    "Vietnamese",
+  ],
   technical: [
     "Journalistic Research & Interviewing",
     "Content Creation (Writing & Editing)",
