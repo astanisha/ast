@@ -53,7 +53,7 @@ export function Skills() {
           </div>
         </div>
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-          <Card className="h-full bg-card/95 backdrop-blur-sm">
+          <Card className="h-full bg-card/95 backdrop-blur-sm transition-all hover:shadow-xl hover:-translate-y-1">
             <CardHeader className="flex flex-row items-center gap-4">
               <Languages className="w-8 h-8 text-accent" />
               <CardTitle className="font-headline">Languages</CardTitle>
@@ -64,7 +64,7 @@ export function Skills() {
               ))}
             </CardContent>
           </Card>
-          <Card className="h-full bg-card/95 backdrop-blur-sm">
+          <Card className="h-full bg-card/95 backdrop-blur-sm transition-all hover:shadow-xl hover:-translate-y-1">
             <CardHeader className="flex flex-row items-center gap-4">
               <Terminal className="w-8 h-8 text-accent" />
               <CardTitle className="font-headline">Technical Skills</CardTitle>
@@ -75,7 +75,7 @@ export function Skills() {
               ))}
             </CardContent>
           </Card>
-          <Card className="h-full bg-card/95 backdrop-blur-sm">
+          <Card className="h-full bg-card/95 backdrop-blur-sm transition-all hover:shadow-xl hover:-translate-y-1">
             <CardHeader className="flex flex-row items-center gap-4">
               <Brush className="w-8 h-8 text-accent" />
               <CardTitle className="font-headline">Creative Skills</CardTitle>
