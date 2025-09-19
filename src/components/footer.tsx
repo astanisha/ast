@@ -44,7 +44,7 @@ export function Footer() {
           src="https://picsum.photos/seed/contact-bg/1920/1080"
           alt="Abstract background for contact section"
           fill
-          className="object-cover"
+          className="object-cover object-center"
           data-ai-hint="desk stationery"
         />
         <div className="absolute inset-0 animated-gradient bg-background/80 backdrop-blur-sm" />
@@ -79,8 +79,8 @@ export function Footer() {
                 </p>
             </div>
 
-            <div className="flex flex-col items-center md:items-start">
-                 <h4 className="text-2xl font-headline mb-4 text-center md:text-left">Get In Touch</h4>
+            <div className="flex flex-col items-center">
+                 <h4 className="text-2xl font-headline mb-4 text-center">Get In Touch</h4>
                  <a
                   href="mailto:astanisha@duck.com"
                   className="text-lg text-green-800 font-bold hover:underline mb-6">

@@ -39,7 +39,7 @@ export function Skills() {
         src="https://picsum.photos/seed/skills-bg/1920/1080"
         alt="Abstract background for skills section"
         fill
-        className="object-cover"
+        className="object-cover object-center"
         data-ai-hint="creative tools"
       />
       <div className="absolute inset-0 animated-gradient bg-background/80 backdrop-blur-sm" />

@@ -30,7 +30,7 @@ export function Education() {
         src="https://picsum.photos/seed/education-bg/1920/1080"
         alt="Abstract background for education section"
         fill
-        className="object-cover"
+        className="object-cover object-center"
         data-ai-hint="university campus"
       />
       <div className="absolute inset-0 animated-gradient bg-background/80 backdrop-blur-sm" />

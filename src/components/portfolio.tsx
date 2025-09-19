@@ -43,7 +43,7 @@ export function Portfolio() {
         src="https://picsum.photos/seed/portfolio-bg/1920/1080"
         alt="Abstract background for portfolio section"
         fill
-        className="object-cover"
+        className="object-cover object-center"
         data-ai-hint="art gallery"
       />
       <div className="absolute inset-0 animated-gradient bg-background/80 backdrop-blur-sm" />

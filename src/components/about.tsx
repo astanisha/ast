@@ -9,7 +9,7 @@ export function About() {
           src="https://picsum.photos/seed/about-bg/1920/1080"
           alt="Abstract background for about section"
           fill
-          className="object-cover"
+          className="object-cover object-center"
           data-ai-hint="library books"
         />
       <div className="absolute inset-0 animated-gradient bg-background/80 backdrop-blur-sm" />
