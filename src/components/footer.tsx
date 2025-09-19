@@ -75,7 +75,7 @@ export function Footer() {
               <p className="mt-2">
                 <a
                   href="mailto:astanisha@duck.com"
-                  className="text-sm text-accent hover:underline">
+                  className="text-sm text-green-800 hover:underline">
                   astanisha@duck.com
                 </a>
               </p>
@@ -108,9 +108,6 @@ export function Footer() {
         </div>
         <div className="text-center mt-8 text-sm text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} Anika Saima Tanisha. All Rights Reserved.</p>
-          <p className="max-w-md mx-auto mt-1">
-            An elegant portfolio to showcase professional journey and skills.
-          </p>
         </div>
       </div>
     </footer>
