@@ -11,4 +11,4 @@ github:
   # The name of the branch to track.
   branch: main
   # The GitHub repository in the format of <owner>/<repository name>.
-  # repository: <owner>/<repository name>
+  repository: astanisha/ast
