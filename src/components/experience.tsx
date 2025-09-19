@@ -45,7 +45,7 @@ export function Experience() {
         
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {experienceData.map((item, index) => (
-            <Card key={index} className="h-full bg-card/80 backdrop-blur-sm">
+            <Card key={index} className="h-full bg-card/95 backdrop-blur-sm">
               <CardHeader>
                 <div className="flex items-start justify-between gap-4">
                   <div>

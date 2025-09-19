@@ -50,7 +50,7 @@ export function Education() {
                <div className="absolute -left-1.5 top-1 w-8 h-8 rounded-full bg-background border-2 border-primary flex items-center justify-center z-10">
                 <GraduationCap className="w-4 h-4 text-primary" />
               </div>
-              <Card className="bg-card/80 backdrop-blur-sm">
+              <Card className="bg-card/95 backdrop-blur-sm">
                 <CardHeader>
                   <CardTitle className="font-headline">{item.institution}</CardTitle>
                   <CardDescription>{item.degree} | {item.years}</CardDescription>

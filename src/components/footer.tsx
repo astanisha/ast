@@ -49,7 +49,7 @@ export function Footer() {
         />
         <div className="absolute inset-0 animated-gradient bg-background/80 backdrop-blur-sm" />
         <div className="container relative z-10 py-12 px-4 md:px-6">
-        <div className="bg-card/80 backdrop-blur-sm p-4 sm:p-8 rounded-lg shadow-2xl border max-w-4xl mx-auto">
+        <div className="bg-card/95 backdrop-blur-sm p-4 sm:p-8 rounded-lg shadow-2xl border max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="flex flex-col items-center md:items-start text-center md:text-left">
                 <Image
