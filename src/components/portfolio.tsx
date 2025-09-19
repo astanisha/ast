@@ -8,31 +8,31 @@ import { PlaceHolderImages } from "@/lib/placeholder-images";
 const portfolioData = [
   {
     id: "portfolio-waste",
+    slug: "urban-waste-management",
     title: "Investigative Report: Urban Waste Management",
     description: "An in-depth look into the challenges and potential solutions for waste management in Dhaka.",
     tags: ["Investigative Journalism", "Social Justice"],
-    link: "#",
   },
   {
     id: "portfolio-vendors",
+    slug: "resilience-of-street-vendors",
     title: "Documentary Short: The Resilience of Street Vendors",
     description: "A multimedia project capturing the daily struggles and perseverance of Dhaka's street vendors.",
     tags: ["Documentary", "Photojournalism"],
-    link: "#",
   },
   {
     id: "portfolio-arts",
+    slug: "traditional-bangladeshi-arts",
     title: "Feature: Traditional Bangladeshi Arts",
     description: "An article exploring the rich history and modern revival of traditional arts and crafts in Bangladesh.",
     tags: ["Cultural Reporting", "Writing"],
-    link: "#",
   },
   {
     id: "portfolio-dhaka",
+    slug: "expressions-of-dhaka",
     title: "Photo Essay: Expressions of Dhaka",
     description: "A collection of street photography that tells the stories of the people of Dhaka through their expressions.",
     tags: ["Photography", "Storytelling"],
-    link: "#",
   },
 ];
 
@@ -52,7 +52,7 @@ export function Portfolio() {
           {portfolioData.map((item) => {
             const imageData = PlaceHolderImages.find(p => p.id === item.id);
             return (
-              <Link href={item.link} target="_blank" key={item.id} className="group block">
+              <Link href={`/portfolio/${item.slug}`} key={item.id} className="group block">
                 <Card className="overflow-hidden h-full flex flex-col transition-all group-hover:shadow-xl group-hover:-translate-y-1">
                   <div className="relative w-full aspect-video">
                     <Image
