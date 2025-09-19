@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "Abstract watercolor background for hero section",
+      "imageUrl": "https://picsum.photos/seed/anika-bg/1920/1080",
+      "imageHint": "abstract watercolor"
+    },
+    {
+      "id": "portfolio-waste",
+      "description": "Image for waste management portfolio item",
+      "imageUrl": "https://picsum.photos/seed/waste/600/400",
+      "imageHint": "city pollution"
+    },
+    {
+      "id": "portfolio-vendors",
+      "description": "Image for street vendors portfolio item",
+      "imageUrl": "https://picsum.photos/seed/vendors/600/400",
+      "imageHint": "street market"
+    },
+    {
+      "id": "portfolio-arts",
+      "description": "Image for Bangladeshi arts portfolio item",
+      "imageUrl": "https://picsum.photos/seed/arts/600/400",
+      "imageHint": "traditional art"
+    },
+    {
+      "id": "portfolio-dhaka",
+      "description": "Image for Dhaka expressions photo essay",
+      "imageUrl": "https://picsum.photos/seed/dhaka-people/600/400",
+      "imageHint": "portrait people"
+    }
+  ]
 }
